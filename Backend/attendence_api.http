@@ -1,0 +1,22 @@
+###
+GET  http://10.43.30.25:6060/att/api/transactionReport/?start_date=2020-09-01&end_date=2020-09-06&departments=3&page=1&page_size=30&employees=32
+Content-Type: application/json
+Authorization:  Token 691e598d940679f76942f7e012ef804089d8d7d2
+
+
+###
+GET  http://10.43.30.25:6060/att/api/firstInLastOutReport//?start_date=2020-09-15&end_date=2020-09-15&departments=3&employees=32&page=1&page_size=30
+Content-Type: application/json
+Authorization:  Token 691e598d940679f76942f7e012ef804089d8d7d2
+
+
+
+###
+GET  http://10.43.30.25:6060/att/api/firstLastReport/?start_date=2020-12-15&end_date=2020-12-15&employees=20
+Content-Type: application/json
+Authorization:  Token 691e598d940679f76942f7e012ef804089d8d7d2
+
+###
+GET http://10.43.30.25:6060/personnel/api/positions/
+Content-Type: application/json
+Authorization:  Token 691e598d940679f76942f7e012ef804089d8d7d2

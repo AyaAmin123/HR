@@ -1,0 +1,6 @@
+http://10.43.30.25:6060/base/api/
+http://10.43.30.25:6060/workflow/api/
+http://10.43.30.25:6060/personnel/api/
+http://10.43.30.25:6060/payroll/api/
+http://10.43.30.25:6060/iclock/api/
+http://10.43.30.25:6060/att/api/

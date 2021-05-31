@@ -1,0 +1,57 @@
+{
+  "name": "hr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "seed_user": "npx sequelize-cli db:seed --seed 20200831090709-demo-user.js",
+    "seed_nationality": "npx sequelize-cli db:seed --seed 20200901142133-nationality_seed.js",
+    "seed_entities": "NODE_ENV=test npx sequelize-cli db:seed --seed 20200909073247-entities",
+    "seed_actions": "NODE_ENV=test npx sequelize-cli db:seed --seed 20200909073829-actions",
+    "seed_entity_action_descs": "NODE_ENV=test npx sequelize-cli db:seed --seed 20200909074948-entity_action_descs",
+    "MIGRATE": "NODE_ENV=test npx sequelize-cli db:migrate",
+    "DEV": "NODE_ENV=development  nodemon index.js",
+    "DEL": "pm2 delete hr_system",
+    "UAT": "NODE_ENV=test  pm2 start index.js --name hr_system",
+    "DEPLOY_SCRIPT_TEST": "NODE_ENV=development  npx sequelize-cli db:migrate;cd bulk;node start.js;cd ..;cd scripts;node importData.js;node updateAllEmployees.js;node getFingerPrintId.js;node importInsuranceDate.js setInsurance;node vacations.js setVacation;node updateVacation.js;node importInsuranceDate.js",
+    "DEPLOY_SCRIPT_PRODUCTION": "NODE_ENV=production  npx sequelize-cli db:migrate;cd bulk;node start.js;cd ..;cd scripts;node importData.js;node updateAllEmployees.js;node getFingerPrintId.js;node importInsuranceDate.js setInsurance; node vacations.js setVacation;node updateVacation.js;node importInsuranceDate.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marwan362/hr.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marwan362/hr/issues"
+  },
+  "homepage": "https://github.com/marwan362/hr#readme",
+  "dependencies": {
+    "app-root-path": "^3.0.0",
+    "axios": "^0.20.0",
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "express-http-context": "^1.2.4",
+    "file-system": "^2.2.2",
+    "flatted": "^3.0.5",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.27.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "mysql2": "^2.1.0",
+    "node-cron": "^2.0.3",
+    "node-uuid": "^1.4.8",
+    "node-xlsx": "^0.15.0",
+    "sequelize": "^6.3.4",
+    "uuid": "^8.3.0",
+    "winston": "^3.3.3",
+    "winston-mongodb": "^5.0.5"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.2.0"
+  }
+}

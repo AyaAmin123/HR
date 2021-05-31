@@ -1,0 +1,595 @@
+[{
+    "id": 1,
+    "position_code": "1",
+    "position_name": "Position",
+    "is_default": true,
+    "parent_position_id": null
+}, {
+    "id": 3,
+    "position_code": "3",
+    "position_name": "Chief Information Officer",
+    "is_default": false,
+    "parent_position_id": 2
+}, {
+    "id": 4,
+    "position_code": "4",
+    "position_name": "IT Director",
+    "is_default": false,
+    "parent_position_id": 2
+}, {
+    "id": 5,
+    "position_code": "5",
+    "position_name": "Technical Support Manager",
+    "is_default": false,
+    "parent_position_id": 2
+}, {
+    "id": 6,
+    "position_code": "6",
+    "position_name": "E-Government Quality Control Manager",
+    "is_default": false,
+    "parent_position_id": 2
+}, {
+    "id": 7,
+    "position_code": "7",
+    "position_name": "Senior Quality Engineer",
+    "is_default": false,
+    "parent_position_id": 2
+}, {
+    "id": 8,
+    "position_code": "8",
+    "position_name": "Senior Oracle Developer",
+    "is_default": false,
+    "parent_position_id": 2
+}, {
+    "id": 9,
+    "position_code": "9",
+    "position_name": "Applications Development Manager",
+    "is_default": false,
+    "parent_position_id": 2
+}, {
+    "id": 10,
+    "position_code": "10",
+    "position_name": "Java Developer Team Leader",
+    "is_default": false,
+    "parent_position_id": 2
+}, {
+    "id": 11,
+    "position_code": "11",
+    "position_name": "Senior Java Developer",
+    "is_default": false,
+    "parent_position_id": 2
+}, {
+    "id": 12,
+    "position_code": "12",
+    "position_name": "Senior Oracle Developer",
+    "is_default": false,
+    "parent_position_id": 2
+}, {
+    "id": 13,
+    "position_code": "13",
+    "position_name": "DB Administrator & Data Analyst",
+    "is_default": false,
+    "parent_position_id": 2
+}, {
+    "id": 14,
+    "position_code": "14",
+    "position_name": "Senior Project Manager",
+    "is_default": false,
+    "parent_position_id": 2
+}, {
+    "id": 15,
+    "position_code": "15",
+    "position_name": "IT Infrastructure Manager",
+    "is_default": false,
+    "parent_position_id": 2
+}, {
+    "id": 16,
+    "position_code": "16",
+    "position_name": "In-House Applications Support Lead",
+    "is_default": false,
+    "parent_position_id": 2
+}, {
+    "id": 17,
+    "position_code": "17",
+    "position_name": "Application Release Lead",
+    "is_default": false,
+    "parent_position_id": 2
+}, {
+    "id": 18,
+    "position_code": "18",
+    "position_name": "Senior System Administrator",
+    "is_default": false,
+    "parent_position_id": 2
+}, {
+    "id": 19,
+    "position_code": "19",
+    "position_name": "Senior Database Administrator",
+    "is_default": false,
+    "parent_position_id": 2
+}, {
+    "id": 20,
+    "position_code": "20",
+    "position_name": "Network Administrator",
+    "is_default": false,
+    "parent_position_id": 2
+}, {
+    "id": 21,
+    "position_code": "21",
+    "position_name": "E-Payment Solution Architecture Director",
+    "is_default": false,
+    "parent_position_id": 2
+}, {
+    "id": 22,
+    "position_code": "22",
+    "position_name": "POS Applications Development Manager",
+    "is_default": false,
+    "parent_position_id": 2
+}, {
+    "id": 23,
+    "position_code": "23",
+    "position_name": "Web Developer",
+    "is_default": false,
+    "parent_position_id": 2
+}, {
+    "id": 24,
+    "position_code": "24",
+    "position_name": "Ruby on Rails Developer",
+    "is_default": false,
+    "parent_position_id": 2
+}, {
+    "id": 25,
+    "position_code": "25",
+    "position_name": "Applications Developer",
+    "is_default": false,
+    "parent_position_id": 2
+}, {
+    "id": 26,
+    "position_code": "26",
+    "position_name": "React & React Native Developer",
+    "is_default": false,
+    "parent_position_id": 2
+}, {
+    "id": 27,
+    "position_code": "27",
+    "position_name": "Back-End Developer",
+    "is_default": false,
+    "parent_position_id": 2
+}, {
+    "id": 28,
+    "position_code": "28",
+    "position_name": "Node. JS Backend Developer",
+    "is_default": false,
+    "parent_position_id": 2
+}, {
+    "id": 29,
+    "position_code": "29",
+    "position_name": "Junior Embedded System Engineer",
+    "is_default": false,
+    "parent_position_id": 2
+}, {
+    "id": 30,
+    "position_code": "30",
+    "position_name": "Junior Embedded System Developer",
+    "is_default": false,
+    "parent_position_id": 2
+}, {
+    "id": 31,
+    "position_code": "31",
+    "position_name": "Mean Stack Developer",
+    "is_default": false,
+    "parent_position_id": 2
+}, {
+    "id": 32,
+    "position_code": "32",
+    "position_name": "Senior UI/UX Designer",
+    "is_default": false,
+    "parent_position_id": 2
+}, {
+    "id": 33,
+    "position_code": "33",
+    "position_name": "UI/UX Designer",
+    "is_default": false,
+    "parent_position_id": 2
+}, {
+    "id": 34,
+    "position_code": "34",
+    "position_name": "E-Payment Application Development Director",
+    "is_default": false,
+    "parent_position_id": 2
+}, {
+    "id": 35,
+    "position_code": "35",
+    "position_name": "E-Payment Quality System Manager",
+    "is_default": false,
+    "parent_position_id": 2
+}, {
+    "id": 36,
+    "position_code": "36",
+    "position_name": "Senior Technical Lead",
+    "is_default": false,
+    "parent_position_id": 2
+}, {
+    "id": 37,
+    "position_code": "37",
+    "position_name": "Software Tester",
+    "is_default": false,
+    "parent_position_id": 2
+}, {
+    "id": 38,
+    "position_code": "38",
+    "position_name": "Quality Control Engineer",
+    "is_default": false,
+    "parent_position_id": 2
+}, {
+    "id": 39,
+    "position_code": "39",
+    "position_name": "Business Analyst",
+    "is_default": false,
+    "parent_position_id": 2
+}, {
+    "id": 40,
+    "position_code": "40",
+    "position_name": "Technical Reporting",
+    "is_default": false,
+    "parent_position_id": 1
+}, {
+    "id": 2,
+    "position_code": "2",
+    "position_name": "Information Technology",
+    "is_default": false,
+    "parent_position_id": 1
+}, {
+    "id": 41,
+    "position_code": "41",
+    "position_name": "Maintenance Director",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 42,
+    "position_code": "42",
+    "position_name": "Maintenance Supervisor ",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 43,
+    "position_code": "43",
+    "position_name": "Senior Computer Maintenance Technician Specialist",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 44,
+    "position_code": "44",
+    "position_name": "Senior Maintenance Specialist ",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 45,
+    "position_code": "45",
+    "position_name": "Maintenance Specialist",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 46,
+    "position_code": "46",
+    "position_name": "Maintenance Specialist ",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 47,
+    "position_code": "47",
+    "position_name": "Senior Follow Up Specialist ",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 48,
+    "position_code": "48",
+    "position_name": "Public Relations",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 49,
+    "position_code": "49",
+    "position_name": "Senior Executive Branch Manager ",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 50,
+    "position_code": "50",
+    "position_name": "Senior Reconciliation Specialist ",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 51,
+    "position_code": "51",
+    "position_name": "Technical Support Supervisor",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 52,
+    "position_code": "52",
+    "position_name": "Senior Technical Support Specialist",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 53,
+    "position_code": "53",
+    "position_name": "Technical Support Specialist",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 54,
+    "position_code": "54",
+    "position_name": "Customer Support Supervisor",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 55,
+    "position_code": "55",
+    "position_name": "Senior Customer Support Specialist",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 56,
+    "position_code": "56",
+    "position_name": "Customer Support Specialist",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 57,
+    "position_code": "57",
+    "position_name": "Office Administrator",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 58,
+    "position_code": "58",
+    "position_name": "Office Boy",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 59,
+    "position_code": "59",
+    "position_name": "Driver",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 60,
+    "position_code": "60",
+    "position_name": "Branch Manager",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 61,
+    "position_code": "61",
+    "position_name": "Reconciliation Specialist",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 62,
+    "position_code": "62",
+    "position_name": "Senior Technical Support Specialist ",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 63,
+    "position_code": "63",
+    "position_name": "Technical Support Specialist ",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 64,
+    "position_code": "64",
+    "position_name": "Senior Customer Support Specialist ",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 65,
+    "position_code": "65",
+    "position_name": "Customer Support Specialist ",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 66,
+    "position_code": "66",
+    "position_name": "Senior Maintenance Specialist",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 67,
+    "position_code": "67",
+    "position_name": "Maintenance Specialist  ",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 68,
+    "position_code": "68",
+    "position_name": "Senior Sector Manager for Bani Sweif, Minya & Fayoum",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 69,
+    "position_code": "69",
+    "position_name": "Senior Reconciliation Specialist",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 70,
+    "position_code": "70",
+    "position_name": "Technical Support Sector Supervisor ",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 71,
+    "position_code": "71",
+    "position_name": "Senior Office Administrator",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 72,
+    "position_code": "72",
+    "position_name": "Senior Sector Manager for Souhag, Assiut & El Wadi",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 73,
+    "position_code": "73",
+    "position_name": "Technical Support Supervisor ",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 74,
+    "position_code": "74",
+    "position_name": "Customer Support Sector Supervisor",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 75,
+    "position_code": "75",
+    "position_name": "Branch Manager ",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 76,
+    "position_code": "76",
+    "position_name": "Senior Office Administrator ",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 77,
+    "position_code": "77",
+    "position_name": "Senior Branch Manager",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 78,
+    "position_code": "78",
+    "position_name": "Senior Branch Manager ",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 79,
+    "position_code": "79",
+    "position_name": "Reconciliation Specialist & Office Administrator",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 80,
+    "position_code": "80",
+    "position_name": "Acting Technical Support Supervisor",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 81,
+    "position_code": "81",
+    "position_name": "Assistant Customer Support Specialist \\",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 82,
+    "position_code": "82",
+    "position_name": "Handicapped ",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 83,
+    "position_code": "83",
+    "position_name": "Senior Operations Specialist",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 84,
+    "position_code": "84",
+    "position_name": "Senior Operations Specialist ",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 85,
+    "position_code": "85",
+    "position_name": "Operations Specialist",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 86,
+    "position_code": "86",
+    "position_name": "Assistant Customer Support Specialist",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 87,
+    "position_code": "87",
+    "position_name": "Senior Sector Manager for Dakahleya, Kafr El Sheikh, Beheira & Gharbeya ",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 88,
+    "position_code": "88",
+    "position_name": "Reconciliation Supervisor",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 89,
+    "position_code": "89",
+    "position_name": "Operations Specialist ",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 90,
+    "position_code": "90",
+    "position_name": "Customer Support Sector Supervisor ",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 91,
+    "position_code": "91",
+    "position_name": "Senior Sector Manager for Suez, Ismailia, North & South Sinai & Red Sea ",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 92,
+    "position_code": "92",
+    "position_name": "Senior Technical Support Sector Supervisor",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 93,
+    "position_code": "93",
+    "position_name": "Senior Customer Sector Supervisor",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 94,
+    "position_code": "94",
+    "position_name": "Senior Customer Support Supervisor ",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 95,
+    "position_code": "95",
+    "position_name": "Senior Operations Assistant ",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 96,
+    "position_code": "96",
+    "position_name": "Office Administrator ",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 97,
+    "position_code": "97",
+    "position_name": "Office Boy ",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 98,
+    "position_code": "98",
+    "position_name": "Office Boy \\",
+    "is_default": false,
+    "parent_position_id": null
+}, {
+    "id": 99,
+    "position_code": "99",
+    "position_name": "Senior Customer Support Supervisor",
+    "is_default": false,
+    "parent_position_id": null
+}]

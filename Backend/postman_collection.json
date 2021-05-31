@@ -1,0 +1,1855 @@
+{
+	"info": {
+		"_postman_id": "9bdd200d-35f2-4a4b-9eea-68044835d95e",
+		"name": "hr Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "attendence api",
+			"item": [
+				{
+					"name": "areas",
+					"item": [
+						{
+							"name": "areas",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Token 9848e02d39298a54a04133bd47b1d04789788ea2"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://10.43.30.25:6060/personnel/api/areas/",
+									"protocol": "http",
+									"host": [
+										"10",
+										"43",
+										"30",
+										"25"
+									],
+									"port": "6060",
+									"path": [
+										"personnel",
+										"api",
+										"areas",
+										""
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "password",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "employees",
+					"item": [
+						{
+							"name": "employees",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": {
+										"password": "Systeco@1234",
+										"username": "sys"
+									}
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"type": "text",
+										"value": "9848e02d39298a54a04133bd47b1d04789788ea2"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://10.43.30.25:6060/personnel/api/employees/?page=6&per_page=500",
+									"protocol": "http",
+									"host": [
+										"10",
+										"43",
+										"30",
+										"25"
+									],
+									"port": "6060",
+									"path": [
+										"personnel",
+										"api",
+										"employees",
+										""
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "6"
+										},
+										{
+											"key": "per_page",
+											"value": "500"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "single employee",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": {
+										"password": "Systeco@1234",
+										"username": "sys"
+									}
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "token",
+										"type": "text",
+										"value": "9848e02d39298a54a04133bd47b1d04789788ea2"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://10.43.30.25:6060/personnel/api/employees/31/",
+									"protocol": "http",
+									"host": [
+										"10",
+										"43",
+										"30",
+										"25"
+									],
+									"port": "6060",
+									"path": [
+										"personnel",
+										"api",
+										"employees",
+										"31",
+										""
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "password",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create employee",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": {
+										"password": "Systeco@1234",
+										"username": "sys"
+									}
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "token",
+										"type": "text",
+										"value": "9848e02d39298a54a04133bd47b1d04789788ea2"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n \"emp_code\": \"employee333\",\r\n \"first_name\": \"emp3_first_name\",\r\n \"last_name\": \"emp3_last_name\",\r\n \"area\": [1],\r\n \"department\": 3\r\n} \r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://10.43.30.25:6060/personnel/api/employees",
+									"protocol": "http",
+									"host": [
+										"10",
+										"43",
+										"30",
+										"25"
+									],
+									"port": "6060",
+									"path": [
+										"personnel",
+										"api",
+										"employees"
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "password",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "edit employee",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": {
+										"password": "Systeco@1234",
+										"username": "sys"
+									}
+								},
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "token",
+										"type": "text",
+										"value": "9848e02d39298a54a04133bd47b1d04789788ea2"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n \"first_name\": \"emp3_first_name_update\",\r\n \"last_name\": \"emp3_last_name_update\"\r\n} ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://10.43.30.25:6060/personnel/api/employees/32",
+									"protocol": "http",
+									"host": [
+										"10",
+										"43",
+										"30",
+										"25"
+									],
+									"port": "6060",
+									"path": [
+										"personnel",
+										"api",
+										"employees",
+										"32"
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "password",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete employee",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": {
+										"password": "Systeco@1234",
+										"username": "sys"
+									}
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "token",
+										"type": "text",
+										"value": "9848e02d39298a54a04133bd47b1d04789788ea2"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n \"first_name\": \"emp3_first_name_update\",\r\n \"last_name\": \"emp3_last_name_update\"\r\n} ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://10.43.30.25:6060/personnel/api/employees/32",
+									"protocol": "http",
+									"host": [
+										"10",
+										"43",
+										"30",
+										"25"
+									],
+									"port": "6060",
+									"path": [
+										"personnel",
+										"api",
+										"employees",
+										"32"
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "password",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "departments",
+					"item": [
+						{
+							"name": "all departments",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Token 9848e02d39298a54a04133bd47b1d04789788ea2"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://10.43.30.25:6060/personnel/api/departments/",
+									"protocol": "http",
+									"host": [
+										"10",
+										"43",
+										"30",
+										"25"
+									],
+									"port": "6060",
+									"path": [
+										"personnel",
+										"api",
+										"departments",
+										""
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "password",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create departments",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Token 9848e02d39298a54a04133bd47b1d04789788ea2"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n \"dept_code\": \"222\",\r\n \"dept_name\": \"Department222\",\r\n \"parent_dept\": 1\r\n} ",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://10.43.30.25:6060/personnel/api/departments/",
+									"protocol": "http",
+									"host": [
+										"10",
+										"43",
+										"30",
+										"25"
+									],
+									"port": "6060",
+									"path": [
+										"personnel",
+										"api",
+										"departments",
+										""
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "password",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update departments",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Token 9848e02d39298a54a04133bd47b1d04789788ea2"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\"id\": 2,\r\n \"dept_code\": \"222\",\r\n \"dept_name\": \"Department222\",\r\n \"parent_dept\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://10.43.30.25:6060/personnel/api/departments/3/",
+									"protocol": "http",
+									"host": [
+										"10",
+										"43",
+										"30",
+										"25"
+									],
+									"port": "6060",
+									"path": [
+										"personnel",
+										"api",
+										"departments",
+										"3",
+										""
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "password",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "show department",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Token 9848e02d39298a54a04133bd47b1d04789788ea2"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://10.43.30.25:6060/personnel/api/departments/3/",
+									"protocol": "http",
+									"host": [
+										"10",
+										"43",
+										"30",
+										"25"
+									],
+									"port": "6060",
+									"path": [
+										"personnel",
+										"api",
+										"departments",
+										"3",
+										""
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "password",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "show department Copy",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"type": "text",
+										"value": "Token 9848e02d39298a54a04133bd47b1d04789788ea2"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://10.43.30.25:6060/personnel/api/departments/3/",
+									"protocol": "http",
+									"host": [
+										"10",
+										"43",
+										"30",
+										"25"
+									],
+									"port": "6060",
+									"path": [
+										"personnel",
+										"api",
+										"departments",
+										"3",
+										""
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": null,
+											"disabled": true
+										},
+										{
+											"key": "password",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"\",\r\n    \"password\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://10.43.30.25:6060/api-token-auth/",
+							"protocol": "http",
+							"host": [
+								"10",
+								"43",
+								"30",
+								"25"
+							],
+							"port": "6060",
+							"path": [
+								"api-token-auth",
+								""
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login jwt",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"\",\r\n    \"password\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://10.43.30.25:6060/jwt-api-token-auth/",
+							"protocol": "http",
+							"host": [
+								"10",
+								"43",
+								"30",
+								"25"
+							],
+							"port": "6060",
+							"path": [
+								"jwt-api-token-auth",
+								""
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "transactionReport",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token 9848e02d39298a54a04133bd47b1d04789788ea2",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://10.43.30.25:6060/att/api/transactionReport/?start_date=2020-09-06&end_date=2020-09-06&employees=35",
+							"protocol": "http",
+							"host": [
+								"10",
+								"43",
+								"30",
+								"25"
+							],
+							"port": "6060",
+							"path": [
+								"att",
+								"api",
+								"transactionReport",
+								""
+							],
+							"query": [
+								{
+									"key": "start_date",
+									"value": "2020-09-06"
+								},
+								{
+									"key": "end_date",
+									"value": "2020-09-06"
+								},
+								{
+									"key": "departments",
+									"value": "-1",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "page_size",
+									"value": "30",
+									"disabled": true
+								},
+								{
+									"key": "employees",
+									"value": "35"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "firstInLastOutReport",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token 9848e02d39298a54a04133bd47b1d04789788ea2",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://10.43.30.25:6060/att/api/firstInLastOutReport//?start_date=2020-09-01&end_date=2020-09-06&departments=3&employees=32&page=1&page_size=30",
+							"protocol": "http",
+							"host": [
+								"10",
+								"43",
+								"30",
+								"25"
+							],
+							"port": "6060",
+							"path": [
+								"att",
+								"api",
+								"firstInLastOutReport",
+								"",
+								""
+							],
+							"query": [
+								{
+									"key": "start_date",
+									"value": "2020-09-01"
+								},
+								{
+									"key": "end_date",
+									"value": "2020-09-06"
+								},
+								{
+									"key": "departments",
+									"value": "3"
+								},
+								{
+									"key": "employees",
+									"value": "32"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "page_size",
+									"value": "30"
+								},
+								{
+									"key": "emp_code",
+									"value": "10139",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "firstLastReport",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": {
+								"username": "sys",
+								"password": "Systeco@1234"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "9848e02d39298a54a04133bd47b1d04789788ea2",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://10.43.30.25:6060/att/api/firstLastReport/?start_date=2020-09-01&end_date=2020-09-06&departments=3&employees=35",
+							"protocol": "http",
+							"host": [
+								"10",
+								"43",
+								"30",
+								"25"
+							],
+							"port": "6060",
+							"path": [
+								"att",
+								"api",
+								"firstLastReport",
+								""
+							],
+							"query": [
+								{
+									"key": "start_date",
+									"value": "2020-09-01"
+								},
+								{
+									"key": "end_date",
+									"value": "2020-09-06"
+								},
+								{
+									"key": "departments",
+									"value": "3"
+								},
+								{
+									"key": "employees",
+									"value": "35"
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "page_size",
+									"value": "30",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "transactions Copy 2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": {
+								"username": "sys",
+								"password": "Systeco@1234"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "9848e02d39298a54a04133bd47b1d04789788ea2",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://10.43.30.25:6060/iclock/transaction/table/?page=1&limit=26",
+							"protocol": "http",
+							"host": [
+								"10",
+								"43",
+								"30",
+								"25"
+							],
+							"port": "6060",
+							"path": [
+								"iclock",
+								"transaction",
+								"table",
+								""
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "26"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "positions",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Token 9848e02d39298a54a04133bd47b1d04789788ea2"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://10.43.30.25:6060/personnel/api/positions/",
+							"protocol": "http",
+							"host": [
+								"10",
+								"43",
+								"30",
+								"25"
+							],
+							"port": "6060",
+							"path": [
+								"personnel",
+								"api",
+								"positions",
+								""
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lateReport",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": {
+								"password": "Systeco@1234",
+								"username": "sys"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"type": "text",
+								"value": "9848e02d39298a54a04133bd47b1d04789788ea2"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://10.43.30.25:6060/att/api/lateReport/?start_date=2020-09-01&end_date=2020-09-06&employees=32",
+							"protocol": "http",
+							"host": [
+								"10",
+								"43",
+								"30",
+								"25"
+							],
+							"port": "6060",
+							"path": [
+								"att",
+								"api",
+								"lateReport",
+								""
+							],
+							"query": [
+								{
+									"key": "start_date",
+									"value": "2020-09-01"
+								},
+								{
+									"key": "end_date",
+									"value": "2020-09-06"
+								},
+								{
+									"key": "employees",
+									"value": "32"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "iclock terminals",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": {
+								"password": "Systeco@1234",
+								"username": "sys"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"type": "text",
+								"value": "9848e02d39298a54a04133bd47b1d04789788ea2"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://10.43.30.25:6060/iclock/api/terminals/",
+							"protocol": "http",
+							"host": [
+								"10",
+								"43",
+								"30",
+								"25"
+							],
+							"port": "6060",
+							"path": [
+								"iclock",
+								"api",
+								"terminals",
+								""
+							],
+							"query": [
+								{
+									"key": "start_date",
+									"value": "2020-09-01",
+									"disabled": true
+								},
+								{
+									"key": "end_date",
+									"value": "2020-09-06",
+									"disabled": true
+								},
+								{
+									"key": "employees",
+									"value": "32",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "iclock transactions",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": {
+								"password": "Systeco@1234",
+								"username": "sys"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"type": "text",
+								"value": "9848e02d39298a54a04133bd47b1d04789788ea2"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://10.43.30.25:6060/iclock/api/transactions/?punch_time=2020-08-27 02:59:17&emp_code=10110",
+							"protocol": "http",
+							"host": [
+								"10",
+								"43",
+								"30",
+								"25"
+							],
+							"port": "6060",
+							"path": [
+								"iclock",
+								"api",
+								"transactions",
+								""
+							],
+							"query": [
+								{
+									"key": "punch_time",
+									"value": "2020-08-27 02:59:17"
+								},
+								{
+									"key": "end_date",
+									"value": "2020-09-06",
+									"disabled": true
+								},
+								{
+									"key": "employees",
+									"value": "32",
+									"disabled": true
+								},
+								{
+									"key": "emp_code",
+									"value": "10110"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "http://localhost:3000/auth/register",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\"  :\"marwan\",\r\n   \"email\" : \"marwan@test.com\",\r\n   \"password\" : \"123456\",\r\n   \"confirm_password\" : \"123456\",\r\n   \"user_role_id\" : 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://{{url_hr}}/auth/register"
+			},
+			"response": [
+				{
+					"name": "http://localhost:3000/auth/register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\"  :\"marwan\",\r\n   \"email\" : \"marwan@test.com\",\r\n   \"password\" : \"123456\",\r\n   \"confirm_password\" : \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/auth/register"
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "70"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"46-pM0esN4FYHbciwi5Lo062eqAjT4\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 27 Aug 2020 09:30:46 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"valid\": false,\n    \"msg\": \"هذا المستخدم موجود من قبل\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:3000/auth/login",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"email\" : \"marwan@test.com\",\r\n   \"password\" : \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://{{url_hr}}/auth/login"
+			},
+			"response": [
+				{
+					"name": "http://localhost:3000/auth/login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"email\" : \"marwan@test.com\",\r\n   \"password\" : \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/auth/login"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "202"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"ca-TMZL3ve8Gh5zGcjz5+spKiiflpI\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 27 Aug 2020 09:31:05 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"valid\": true,\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoibWFyd2FuIiwiZW1haWwiOiJtYXJ3YW5AdGVzdC5jb20iLCJpYXQiOjE1OTg1MjA2NjV9.2hmeHZACE2wm8Cx0BeQxacdrxEM8s1fJ-pmOn1pTEKU\",\n    \"msg\": \"success\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:3000/auth/reset_password",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6Im1hcndhbiIsImVtYWlsIjoibWFyd2FuQHRlc3QuY29tIiwiaWF0IjoxNTk5NjU0MjEwfQ.zLx1FtrJyxPK29Bh_uP5I1soKuWVJnmnSbvZ14R3EqU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"old_password\" : \"123456\",\r\n    \"new_password\" : \"12345\",\r\n    \"confirm_new_password\" : \"12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://{{url_hr}}/auth/reset_password"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/lookup/branches/get_all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://{{url_hr}}/lookup/departments/get_all"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/lookup/branches/get_all",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://{{url_hr}}/lookup/branches/get_by_id"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/lookup/branches/get_all",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : 4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://{{url_hr}}/lookup/branches/delete_by_id"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/lookup/branches/get_all",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://{{url_hr}}/lookup/branches/create"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/lookup/branches/get_all",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\" : 1,\r\n  \"description\" : \"player\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://{{url_hr}}/lookup/branches/update"
+			},
+			"response": []
+		},
+		{
+			"name": "import employees",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://{{url_hr}}/import/import_emp"
+			},
+			"response": []
+		},
+		{
+			"name": "get employees",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6Im1hcndhbiIsImVtYWlsIjoibWFyd2FuQHRlc3QuY29tIiwiaWF0IjoxNjAwMTY3NDUwfQ.ouBZwi2FvOs4V53RBVr0Elb4ezAFhEKlnFoluCQt9wY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{url_hr}}/employees/get?page=0&per_page=5",
+					"protocol": "http",
+					"host": [
+						"{{url_hr}}"
+					],
+					"path": [
+						"employees",
+						"get"
+					],
+					"query": [
+						{
+							"key": "department_id",
+							"value": "36",
+							"disabled": true
+						},
+						{
+							"key": "ar_name",
+							"value": "مروان",
+							"disabled": true
+						},
+						{
+							"key": "finger_print_id",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "join_date",
+							"value": "2016-08-21",
+							"disabled": true
+						},
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "per_page",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/employees/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"en_name\" : \"testss\",\r\n    \"ar_name\" : \"testss\",\r\n    \"emp_code\" : 123456789,\r\n    \"join_date\" : \"2019-02-03 22:00:00\",\r\n    \"actual_status\" : 1,\r\n    \"department_id\" : 36,\r\n    \"branch_id\" : 98\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://{{url_hr}}/employees/create"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/employees/update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : 18,\r\n    \"en_name\" : \"tessst\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://{{url_hr}}/employees/update"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3001/employees/delete_by_id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : 18\r\n   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://{{url_hr}}/employees/delete_by_id"
+			},
+			"response": []
+		},
+		{
+			"name": "getById",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{url_hr}}/employees/getById?id=1",
+					"protocol": "http",
+					"host": [
+						"{{url_hr}}"
+					],
+					"path": [
+						"employees",
+						"getById"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						},
+						{
+							"key": "",
+							"value": "مروان",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{url_hr}}/hr/notifications/readNotification",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6Im1hcndhbiIsImVtYWlsIjoibWFyd2FuQHRlc3QuY29tIiwiaWF0IjoxNTk5NjU0MjEwfQ.zLx1FtrJyxPK29Bh_uP5I1soKuWVJnmnSbvZ14R3EqU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"notification_id\" : 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{url_hr}}/notifications/readNotification",
+					"protocol": "http",
+					"host": [
+						"{{url_hr}}"
+					],
+					"path": [
+						"notifications",
+						"readNotification"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://{{url_hr}}/hr/notifications/getNotifications",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6Im1hcndhbiIsImVtYWlsIjoibWFyd2FuQHRlc3QuY29tIiwiaWF0IjoxNTk5NjU0MjEwfQ.zLx1FtrJyxPK29Bh_uP5I1soKuWVJnmnSbvZ14R3EqU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{url_hr}}/notifications/getNotifications",
+					"protocol": "http",
+					"host": [
+						"{{url_hr}}"
+					],
+					"path": [
+						"notifications",
+						"getNotifications"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

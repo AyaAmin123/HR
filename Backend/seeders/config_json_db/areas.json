@@ -1,0 +1,159 @@
+[{
+        "id": 1,
+        "area_code": "1",
+        "area_name": "Not Authorized",
+        "is_default": true,
+        "parent_area_id": null
+    },
+    {
+        "id": 2,
+        "area_code": "2",
+        "area_name": "Smart Village",
+        "is_default": false,
+        "parent_area_id": null
+    }, {
+        "id": 74,
+        "area_code": "3",
+        "area_name": "Maintenance Center",
+        "is_default": false,
+        "parent_area_id": null
+    }, {
+        "id": 75,
+        "area_code": "4",
+        "area_name": "Cairo - El Geish",
+        "is_default": false,
+        "parent_area_id": null
+    }, {
+        "id": 76,
+        "area_code": "5",
+        "area_name": "Cairo - Helwan/ Maadi",
+        "is_default": false,
+        "parent_area_id": null
+    }, {
+        "id": 77,
+        "area_code": "6",
+        "area_name": "Giza",
+        "is_default": false,
+        "parent_area_id": null
+    }, {
+        "id": 78,
+        "area_code": "7",
+        "area_name": "Bani Sweif",
+        "is_default": false,
+        "parent_area_id": null
+    }, {
+        "id": 79,
+        "area_code": "8",
+        "area_name": "Souhag",
+        "is_default": false,
+        "parent_area_id": null
+    }, {
+        "id": 80,
+        "area_code": "9",
+        "area_name": "Luxor",
+        "is_default": false,
+        "parent_area_id": null
+    }, {
+        "id": 81,
+        "area_code": "10",
+        "area_name": "Qena",
+        "is_default": false,
+        "parent_area_id": null
+    }, {
+        "id": 82,
+        "area_code": "11",
+        "area_name": "Aswan",
+        "is_default": false,
+        "parent_area_id": null
+    }, {
+        "id": 83,
+        "area_code": "12",
+        "area_name": "Monofeya",
+        "is_default": false,
+        "parent_area_id": null
+    }, {
+        "id": 84,
+        "area_code": "13",
+        "area_name": "Sharkeya",
+        "is_default": false,
+        "parent_area_id": null
+    }, {
+        "id": 85,
+        "area_code": "14",
+        "area_name": "Dakahleya",
+        "is_default": false,
+        "parent_area_id": null
+    }, {
+        "id": 86,
+        "area_code": "15",
+        "area_name": "Suez",
+        "is_default": false,
+        "parent_area_id": null
+    }, {
+        "id": 87,
+        "area_code": "16",
+        "area_name": "Ismailia",
+        "is_default": false,
+        "parent_area_id": null
+    }, {
+        "id": 88,
+        "area_code": "17",
+        "area_name": "Port Said",
+        "is_default": false,
+        "parent_area_id": null
+    }, {
+        "id": 89,
+        "area_code": "18",
+        "area_name": "Dameitta",
+        "is_default": false,
+        "parent_area_id": null
+    }, {
+        "id": 90,
+        "area_code": "19",
+        "area_name": "Fayoum",
+        "is_default": false,
+        "parent_area_id": null
+    }, {
+        "id": 91,
+        "area_code": "20",
+        "area_name": "Qaliobeya",
+        "is_default": false,
+        "parent_area_id": null
+    }, {
+        "id": 92,
+        "area_code": "21",
+        "area_name": "Gharbeya",
+        "is_default": false,
+        "parent_area_id": null
+    }, {
+        "id": 93,
+        "area_code": "22",
+        "area_name": "Kafr El Sheikh",
+        "is_default": false,
+        "parent_area_id": null
+    }, {
+        "id": 94,
+        "area_code": "23",
+        "area_name": "Beheira",
+        "is_default": false,
+        "parent_area_id": null
+    }, {
+        "id": 95,
+        "area_code": "24",
+        "area_name": "Minia Branch",
+        "is_default": false,
+        "parent_area_id": null
+    }, {
+        "id": 96,
+        "area_code": "25",
+        "area_name": "New Valley",
+        "is_default": false,
+        "parent_area_id": null
+    }, {
+        "id": 97,
+        "area_code": "26",
+        "area_name": "Assiut",
+        "is_default": false,
+        "parent_area_id": null
+    }
+]

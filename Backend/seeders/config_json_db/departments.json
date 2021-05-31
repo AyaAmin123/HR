@@ -1,0 +1,211 @@
+[{
+    "id": 1,
+    "dept_code": "1",
+    "dept_name": "Department",
+    "is_default": true,
+    "parent_dept_id": null
+}, {
+    "id": 2,
+    "dept_code": "2",
+    "dept_name": "Smart Village",
+    "is_default": false,
+    "parent_dept_id": null
+}, {
+    "id": 3,
+    "dept_code": "3",
+    "dept_name": "Information Technology",
+    "is_default": false,
+    "parent_dept_id": 2
+}, {
+    "id": 4,
+    "dept_code": "4",
+    "dept_name": "Technical Reporting",
+    "is_default": false,
+    "parent_dept_id": 2
+}, {
+    "id": 5,
+    "dept_code": "5",
+    "dept_name": "Central Operations",
+    "is_default": false,
+    "parent_dept_id": 2
+}, {
+    "id": 6,
+    "dept_code": "6",
+    "dept_name": "Financial Settlements",
+    "is_default": false,
+    "parent_dept_id": 2
+}, {
+    "id": 7,
+    "dept_code": "7",
+    "dept_name": "Reporting & Information",
+    "is_default": false,
+    "parent_dept_id": 2
+}, {
+    "id": 8,
+    "dept_code": "8",
+    "dept_name": "Finance",
+    "is_default": false,
+    "parent_dept_id": 2
+}, {
+    "id": 9,
+    "dept_code": "9",
+    "dept_name": "Administrative Affairs",
+    "is_default": false,
+    "parent_dept_id": 2
+}, {
+    "id": 10,
+    "dept_code": "10",
+    "dept_name": "Human Resources",
+    "is_default": false,
+    "parent_dept_id": 2
+}, {
+    "id": 11,
+    "dept_code": "11",
+    "dept_name": "Office Administration",
+    "is_default": false,
+    "parent_dept_id": 2
+}, {
+    "id": 12,
+    "dept_code": "20",
+    "dept_name": "Maintenance Center",
+    "is_default": false,
+    "parent_dept_id": null
+}, {
+    "id": 13,
+    "dept_code": "21",
+    "dept_name": "Cairo - El Geish",
+    "is_default": false,
+    "parent_dept_id": null
+}, {
+    "id": 14,
+    "dept_code": "22",
+    "dept_name": "Cairo - Helwan/ Maadi",
+    "is_default": false,
+    "parent_dept_id": null
+}, {
+    "id": 15,
+    "dept_code": "23",
+    "dept_name": "Giza",
+    "is_default": false,
+    "parent_dept_id": null
+}, {
+    "id": 16,
+    "dept_code": "24",
+    "dept_name": "Bani Sweif",
+    "is_default": false,
+    "parent_dept_id": null
+}, {
+    "id": 17,
+    "dept_code": "25",
+    "dept_name": "Souhag",
+    "is_default": false,
+    "parent_dept_id": null
+}, {
+    "id": 18,
+    "dept_code": "26",
+    "dept_name": "Luxor",
+    "is_default": false,
+    "parent_dept_id": null
+}, {
+    "id": 19,
+    "dept_code": "27",
+    "dept_name": "Qena",
+    "is_default": false,
+    "parent_dept_id": null
+}, {
+    "id": 20,
+    "dept_code": "28",
+    "dept_name": "Aswan",
+    "is_default": false,
+    "parent_dept_id": null
+}, {
+    "id": 21,
+    "dept_code": "29",
+    "dept_name": "Monofeya",
+    "is_default": false,
+    "parent_dept_id": null
+}, {
+    "id": 22,
+    "dept_code": "30",
+    "dept_name": "Sharkeya",
+    "is_default": false,
+    "parent_dept_id": null
+}, {
+    "id": 23,
+    "dept_code": "31",
+    "dept_name": "Dakahleya",
+    "is_default": false,
+    "parent_dept_id": null
+}, {
+    "id": 24,
+    "dept_code": "32",
+    "dept_name": "Suez",
+    "is_default": false,
+    "parent_dept_id": null
+}, {
+    "id": 25,
+    "dept_code": "33",
+    "dept_name": "Ismailia",
+    "is_default": false,
+    "parent_dept_id": null
+}, {
+    "id": 26,
+    "dept_code": "34",
+    "dept_name": "Port Said",
+    "is_default": false,
+    "parent_dept_id": null
+}, {
+    "id": 27,
+    "dept_code": "35",
+    "dept_name": "Dameitta",
+    "is_default": false,
+    "parent_dept_id": null
+}, {
+    "id": 28,
+    "dept_code": "36",
+    "dept_name": "Fayoum",
+    "is_default": false,
+    "parent_dept_id": null
+}, {
+    "id": 29,
+    "dept_code": "37",
+    "dept_name": "Qaliobeya",
+    "is_default": false,
+    "parent_dept_id": null
+}, {
+    "id": 30,
+    "dept_code": "38",
+    "dept_name": "Gharbeya",
+    "is_default": false,
+    "parent_dept_id": null
+}, {
+    "id": 31,
+    "dept_code": "39",
+    "dept_name": "Kafr El Sheikh",
+    "is_default": false,
+    "parent_dept_id": null
+}, {
+    "id": 32,
+    "dept_code": "40",
+    "dept_name": "Beheira",
+    "is_default": false,
+    "parent_dept_id": null
+}, {
+    "id": 33,
+    "dept_code": "41",
+    "dept_name": "Minia Branch",
+    "is_default": false,
+    "parent_dept_id": null
+}, {
+    "id": 34,
+    "dept_code": "42",
+    "dept_name": "New Valley",
+    "is_default": false,
+    "parent_dept_id": null
+}, {
+    "id": 35,
+    "dept_code": "43",
+    "dept_name": "Assiut",
+    "is_default": false,
+    "parent_dept_id": null
+}]

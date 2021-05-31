@@ -1,0 +1,16 @@
+{
+  "attendence": {
+    "development": {
+      "base_url": "http://10.43.30.25:6060",
+      "attendence_token": "Token 691e598d940679f76942f7e012ef804089d8d7d2"
+    },
+    "production": {
+      "base_url": "http://10.43.30.25:6060",
+      "attendence_token": "Token 691e598d940679f76942f7e012ef804089d8d7d2"
+    },
+    "test": {
+      "base_url": "http://10.43.30.25:6060",
+      "attendence_token": "Token 691e598d940679f76942f7e012ef804089d8d7d2"
+    }
+  }
+}

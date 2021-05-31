@@ -1,0 +1,145 @@
+Employee basic data
+npx sequelize-cli model:generate --name Employee --attributes
+name:string,finger_print_id:string,position_id:integer,join_date:date,actual_status:integer,branch_id:integer,department_id:integer
+
+npx sequelize-cli model:generate --name EmployeeDetail --attributes
+payroll_id:string,birth_date:date,position_history:text,termination_date:date,team_id:integer,is_direct_manager:integer,direct_manager_name:string,direct_manager_position_id:integer,grade:string,rank:string,probation_date:date,contract_type:string,social_insurance_no:string,bank_account_name:string,bank_account_no:string,business_email:string,personal_email:string,mobile:string,telephone:string,data_sheet_address:string,national_id_address:text,national_id_no:string,issue_date:date,expire_date:date,gender:string,nationality_id:integer,religion:string,blood_type:string,military_service:string,social_status:string,smart_previous_join_date:date,remarks:text
+emergency data
+
+
+
+family data
+npx sequelize-cli model:generate --name RelationShip --attributes name:string,description:string
+npx sequelize-cli model:generate --name EmployeeFamily --attributes
+relationship_id:integer,person_name:string,person_birth_date:date,person_national_id:string,parent_id:integer
+
+
+teams
+contract_types
+blood_types
+npx sequelize-cli model:generate --name Nationality --attributes name:string,description:string
+npx sequelize-cli model:generate --name Team --attributes name:string,description:string
+
+
+
+npx sequelize-cli model:generate --name Position --attributes name:string,description:string
+npx sequelize-cli model:generate --name Department --attributes name:string,description:string
+npx sequelize-cli model:generate --name Branch --attributes name:string,description:string
+
+
+##migrate
+npx sequelize-cli db:migrate
+
+npx sequelize-cli db:seed:all
+
+
+##notification system
+npx sequelize-cli model:generate --name NotificationEntity --attributes name:string,description:string
+npx sequelize-cli model:generate --name NotificationEntityType --attributes name:string,description:string
+npx sequelize-cli model:generate --name NotificationObject --attributes status:boolean
+
+npx sequelize-cli model:generate --name Notification --attributes is_read:boolean,
+finger_print_id:string,
+position_id:integer,
+join_date:date,actual_status:integer,
+branch_id:integer,department_id:integer
+
+
+## create migation only
+npx sequelize-cli migration:create --name add_emergency_to_employee_family
+
+npx sequelize-cli migration:create --name rename_name_emp_and_add_ar_name
+
+
+npx sequelize-cli migration:create --name add_branch_foriegn
+
+##create seed
+npx sequelize-cli seed:generate --name branches_seed
+
+
+
+##seed specific file
+npx sequelize-cli db:seed --seed 20200901142133-nationality_seed.js
+npx sequelize-cli db:seed --seed 20200902133935-branches_seed.js
+
+
+# FP/Emp. ID Payroll ID Name Position " Position
+History" Joining Date "Actual Status Hired (1)
+Turn Over (0)" Resignation \ Termination Date (if 0) Branch Department Team Direct Manager (True, False) Reporting to:
+--------Name of their Direct Manager Reporting to: --------Position of their Direct Manager Grade Rank End of Probation
+Date Contract Type Social Insurance No. Bank Account in (Name of Bank) Bank Account No. Business E-mail Personel E-mail
+Mobile Telephone Data Sheet Address National ID Address National ID No. Issue Date Expire Date Birth Date Gender
+Nationality Religion Blood Type Military Service Social Status Wife / Wives Name/s Wife / Wives Birth Date/s Wife /
+Wives National ID No./s No. of Children Child / Children Name/s Child / Children Birth Date/s Child / Children National
+ID No./s Smart Previous Joining Date (If they were in Smart before) Remarks العنوان الموبايل التليفون صلة القرابة اسم
+القريب العنوان الموبايل التليفون صلة القرابة اسم القريب
+
+
+
+
+
+npx sequelize-cli model:generate --name EmployeeBranch --attributes employee_id:integer,branch_id:integer
+npx sequelize-cli seed:generate --name department-seed
+npx sequelize-cli migration:generate --name add-area-code-dep-code
+
+
+
+npx sequelize-cli model:generate --name employee_attendence --attributes
+att_date:date,first_punch:time,last_punch:time,employee_id:integer,employee_code:integer
+
+
+{
+"emp_code": "10128",
+"first_name": "Mohamed Ahmed",
+"last_name": "Abd El Gawad AbdElHameed",
+"nick_name": null,
+"gender": "Male",
+"dept_code": "3",
+"dept_name": "Information Technology",
+"position_code": null,
+"position_name": null,
+"att_date": "2020-09-01",
+"weekday": "Tuesday",
+"first_punch": "09:02",
+"last_punch": "16:59",
+"total_time": 477.0
+}
+------------ datetime playground ------------
+
+// console.log(Date.now().toLocaleString());
+// console.log(moment().format('MMMM Do YYYY, h:mm:ss a'));
+// console.log(moment().format('YYYY-MM-DD'));
+// var time_now = new Date().toISOString().replace(/T/, ' ').replace(/\..+/, '');
+// replace T with a space
+
+// start_date = '2020-09-06'
+// end_date = '2020-09-07'
+
+
+
+npx sequelize-cli model:generate --name wf_action_types --attributes name:string,description:string
+
+npx sequelize-cli model:generate --name wf_actions --attributes name:string,description:string,action_type_id:integer
+
+
+npx sequelize-cli model:generate --name wf_Resposible_peoples --attributes
+state_id:integer,user_id:integer,is_editor:boolean
+
+
+
+
+npx sequelize-cli model:generate --name wf_transitions --attributes
+from_state:integer,to_state:integer,action_id:integer
+
+
+
+npx sequelize-cli model:generate --name requests --attributes
+emp_id:integer,request_date:date,request_type_id:integer,start_from:date,end_to:date,num_of_days:integer,state_id:integer,status:integer,reason:string,current_user_id:integer
+
+
+npx sequelize-cli model:generate --name attendance --attributes
+emp_id:integer,current_date:date,planned_in:date,planned_out:date,actual_in:date,actual_out:date,is_exception:boolean,correction_action_id:integer
+
+
+
+npx sequelize-cli model:generate --name wf_states --attributes name:string,type:integer

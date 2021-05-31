@@ -1,0 +1,8 @@
+30 9 * * * /usr/bin/node /home/damen/Production/hr/scripts/attendanceScripts/addAttendanceTonight.js > /home/damen/Production/hr/logs/addAttendanceTonight.log
+1 12 * * * /usr/bin/node /home/damen/Production/hr/scripts/attendanceScripts/calculateLatenessEveryDay.js > /home/damen/Production/hr/logs/calculateLatenessEveryDay.log
+0 2 * * * /usr/bin/node /home/damen/Production/hr/scripts/monthlyClose.js  > /home/damen/Production/hr/logs/monthlyClose.log
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+0 1 * * * /usr/bin/node /home/damen/Production/hr/scripts/incrementInsuranceDateCounts.js  > /home/damen/Production/hr/logs/incrementInsuranceDateCounts.log
+0 3 * * * /usr/bin/node /home/damen/Production/hr/scripts/vacations.js  > /home/damen/Production/hr/logs/vacations.log
+0 4 * * * /usr/bin/node /home/damen/Production/hr/scripts/runEveryDayCheckIfEmpPassSixMonths.js  > /home/damen/Production/hr/logs/runEveryDayCheckIfEmpPassSixMonths.log
